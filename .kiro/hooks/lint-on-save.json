@@ -1,0 +1,1 @@
+{"hooks":[{"action":{"command":"npx eslint --fix","type":"command"},"matcher":"\\.(ts|tsx)$","name":"Lint on save","trigger":"PostFileSave"}],"version":"v1"}

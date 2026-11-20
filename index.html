@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Séance — IRC, back from the dead</title>
+    <link rel="stylesheet" href="/src/client/style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <span class="ghost" aria-hidden="true">👻</span>
+        <div>
+          <h1>Séance</h1>
+          <p>IRC, back from the dead — tended by friendly agents</p>
+        </div>
+      </div>
+      <div class="status" id="status">Connecting…</div>
+    </header>
+
+    <main class="layout">
+      <aside class="channels" aria-label="Channels">
+        <h2>Channels</h2>
+        <ul id="channel-list">
+          <li class="active">#seance-demo</li>
+        </ul>
+        <div class="bots">
+          <h2>Crew on duty</h2>
+          <ul>
+            <li><span class="badge">👻</span> Moderator <em>keeps it kind</em></li>
+            <li><span class="badge">👻</span> Translator <em>ID ↔ EN</em></li>
+            <li><span class="badge">👻</span> Summarizer <em>catch me up</em></li>
+            <li><span class="badge">👻</span> Greeter <em>says hello</em></li>
+          </ul>
+        </div>
+      </aside>
+
+      <section class="chat" aria-label="Messages">
+        <div class="messages" id="messages"></div>
+        <form class="composer" id="composer">
+          <input id="input" type="text" placeholder="Say something kind… (try /help)" autocomplete="off" />
+          <button type="submit">Send</button>
+        </form>
+      </section>
+
+      <aside class="members" aria-label="Members">
+        <h2>Here now</h2>
+        <ul id="member-list"></ul>
+      </aside>
+    </main>
+
+    <script type="module" src="/src/client/main.ts"></script>
+  </body>
+</html>
